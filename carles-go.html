@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+    	body{
+    		background-color: cyan;
+    	}
+    	.navbar {
+    		float: left;
+    		background-color: #FFFF;
+    		width: 100%;
+    	}
+    	.navbar li{
+    		float: left;
+    		list-style: none;
+    	}
+    	.navbar li a{
+    		font-size: 24px;
+    		color: #051433;
+    		text-decoration: none;
+    		padding: 5px;
+    		display: block;
+    		font-weight: bold;
+    	}
+    	.navbar li a:hover:{
+    		background-color: #FFFF;
+    		color: #0000;
+    	}
+    	.center ul{
+    		width: -moz-fit-content;
+    		width: -webkit-fit-content;
+    		width: fit-content;
+    		margin: auto;
+    	}
+    	.navbar label{
+    		position: absolute;
+    		top: 70%;
+    		right: 41%;
+    		font-size: 12px;
+        	color: #051433;
+        }
+        .btn{
+        	position: absolute;
+        	top: 30%;
+        	right: 5%;
+        	color: #FFFDFD;
+        	background-color: #051433;
+        }
+        .logo-pembayaran{
+        	margin-top: 20px;
+        	border-radius: 5px;
+        	width: 200px;
+        	background-color: cyan;
+        	box-shadow: #474747;
+        }
+        img{
+        	position: absolute;
+        	top: 10%;
+        	left: 2%;
+        	border-style: none;
+        	max-width: 100%;
+        	height: auto;
+        	cursor: pointer;
+        }
+        p{
+        	position: absolute;
+        	top: 45%;
+        	left: 2%;
+        }
+		 .container{
+		  background: white;
+		  width:40%;
+		  height:auto;
+		  padding:15px;
+		  position: absolute;
+		  right: 5%;
+		  top:15%;
+		  border-radius: 5px;
+		}
+		h1{
+			font-family: Roboto;
+			font-size: 24px;
+			color: #000000;
+		}
+		.input-form{
+		  width:95%;
+		  background:#F9F9F9;
+		  margin:0.9%;
+		  padding:10px;
+		  border: none;
+		  border-radius: 5px;
+		}
+		label{
+			font-size: 18px;
+			padding-right: 2px;
+		}
+		.item2{
+			  background: white;
+			  width:40%;
+			  height:50%;
+			  padding:15px;
+			  position: absolute;
+			  right: 5%;
+			  top:45%;
+			  border-radius: 5px;
+		}
+		.item2 h2{
+			font-family: Roboto;
+			font-size: 24px;
+			position: absolute;
+			top: 3%;
+			left: 4%;
+		}
+		.btn1{
+			position: absolute;
+			top: 15%;
+			left: 5%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border:1px solid;
+			font-size:14px;
+			cursor: pointer;
+		}
+		.btn2{
+			position: absolute;
+			top: 15%;
+			left: 25%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.btn3{
+			position: absolute;
+			top: 15%;
+			left: 45%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.btn4{
+			position: absolute;
+			top: 15%;
+			left: 65%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.btn5{
+			position: absolute;
+			top: 35%;
+			left: 5%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.btn6{
+			position: absolute;
+			top: 35%;
+			left: 25%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.btn7{
+			position: absolute;
+			top: 35%;
+			left: 45%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.btn8{
+			position: absolute;
+			top: 35%;
+			left: 65%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.btn9{
+			position: absolute;
+			top: 55%;
+			left: 5%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}	
+		.btn10{
+			position: absolute;
+			top: 55%;
+			left: 25%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.btn11{
+			position: absolute;
+			top: 55%;
+			left: 45%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.btn12{
+			position: absolute;
+			top: 55%;
+			left: 65%;
+			width: 90px;
+			height: 30px;
+			background: white;
+			border: 1px solid;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		h3{
+			position: absolute;
+			top: 100%;
+			left: 55%;
+			font-family: Roboto;
+			font-size: 24px;
+			background: white;
+			width:40%;
+			height:55%;
+			border-radius: 5px;
+		}
+		.item3 label{
+			position: absolute;
+			top: 105%;
+			left: 56%;
+			font-size: 20px;
+			font-family: Roboto;
+		}
+		.item3 p{
+			position: absolute;
+			top: 110%;
+			left: 56%;
+			font-family: Roboto;
+			font-size: 20px;
+		}
+		.payment1 img{
+			position: absolute;
+			top: 120%;
+			left: 56%;
+		}
+		.payment1 input{
+			position: absolute;
+			top: 118%;
+			left: 61%;
+		}
+		.payment2 img{
+			position: absolute;
+			top: 120%;
+			left: 70%;
+		}
+		.payment2 input{
+			position: absolute;
+			top: 118%;
+			left: 75%;
+		}
+		.payment3 img{
+			position: absolute;
+			top: 120%;
+			left: 84%;
+		}
+		.payment3 input{
+			position: absolute;
+			top: 118%;
+			left: 89%;
+		}
+		.payment4 img{
+			position: absolute;
+			top: 140%;
+			left: 56%;
+		}
+		.payment4 input{
+			position: absolute;
+			top: 138%;
+			left: 61%;
+		}
+		.payment5 img{
+			position: absolute;
+			top: 140%;
+			left: 70%;
+		}
+		.payment5 input{
+			position: absolute;
+			top: 138%;
+			left: 75%;
+		}
+		.payment6 img{
+			position: absolute;
+			top: 140%;
+			left: 84%;
+		}
+		.payment6 input{
+			position: absolute;
+			top: 138%;
+			left: 89%;
+		}
+		footer img{
+			position: absolute;
+			top: 170%;
+		}
+		footer p{
+			position: absolute;
+			top: 170%;
+			left: 15%;
+			font-family: Roboto;
+			font-size: 25px;
+			color: #000000;
+			font-style: bold;
+		}
+		footer label{
+			position: absolute;
+			top: 175%;
+			left: 15%;
+			font-family: Roboto;
+			font-size: 21px;
+			color: #000000;
+		}
+		footer a{
+			position: absolute;
+			top: 180%;
+			left: 15%;
+		}
+
+    </style>
+
+    <title>Carles-Go</title>
+  </head>
+  <header>
+  	 <div class="navbar center">
+    	<ul>
+    		<li><a href="index.html">CARLES-GO</a></li>
+    	</ul>
+    	<label for="floatingInput">(Website Pembayaran Sampah bulanan)</label>
+    	<button class="btn" type="hai,user">Hai,User</button>
+    </div>
+  </header>
+  <body>
+    <!--- content ---->
+    <img class="box-shadow-3 logo-pembayaran" src="logo.png" alt="Carles-Go">
+    <p>Website pembayaran sampah bulanan,<br>Kini Pembayaran sampah bulanan lebih mudah<br>dan lebih cepat.</p>
+    <div class="container">
+    	<h1>1.Masukkan No. Kartu Keluarga</h1>
+    	 <input required class="input-form laf" type="text" name="" value="" placeholder="No.Kartu Keluarga">
+    	 <label>Untuk melakukan Pembayaran, anda harus memasukkan Nomor Kartu Keluarga anda dengan benar. </label>
+    </div>
+   <div class="item2">
+				<h2> 2. Pilih Bulan</h2>
+			<input class="btn1" type="button" name="" value="Januari">
+			<input class="btn2" type="button" name="" value="Febuari">
+			<input class="btn3" type="button" name="" value="Maret">
+			<input class="btn4" type="button" name="" value="April">
+			<input class="btn5" type="button" name="" value="Mei">
+			<input class="btn6" type="button" name="" value="Juni">
+			<input class="btn7" type="button" name="" value="Juli">
+			<input class="btn8" type="button" name="" value="Agustus">
+			<input class="btn9" type="button" name="" value="September">
+			<input class="btn10" type="button" name="" value="Oktober">
+			<input class="btn11" type="button" name="" value="November">
+			<input class="btn12" type="button" name="" value="Desember">
+	</div>
+	<div class="item3">
+		<h3>3.Metode Pembayaran</h3>
+		<label>Pilih Metode Pembayaran</label>
+		<p class="text-break">IDR 15,000</p>
+	</div>
+	<div class="payment1">
+		<input type="checkbox"  value=""><img src="gopay.jpg" width="150px" height="75px">
+	</div>	
+	<div class="payment2">
+		<input type="checkbox" name=""><img src="dana.png" width="150px" height="75px">
+	</div>
+	<div class="payment3">
+		<input type="checkbox" name=""><img src="bni.png" width="150px" height="75px">
+	</div>
+	<div class="payment4">
+		<input type="checkbox" name=""><img src="bri.jpg" width="150px" height="75px">
+	</div>
+	<div class="payment5">
+		<input type="checkbox" name=""><img src="indomaret.jpg" width="150px" height="75px">
+	</div>
+	<div class="payment6">
+		<input type="checkbox" name=""><img src="alfamart.png" width="150px" height="75px">
+	</div>
+		<!--- Akhir Content --->
+	<!-- Footer -->
+	 	<footer>
+	 		<img src="logo.png " alt="Lestari Muncarku" style="width: 120px;">
+	 		<p>LEMURU</p>
+	 		<label>(Lestari Muncarku)</label>
+	 		<a>Jl. Sumberayu,Tembokrejo<br>Muncar(68472),Banyuwangi</a>
+	 	</footer>
+	                      
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
